@@ -1,10 +1,10 @@
 const customers = [
-  { id: 1, name: "Alice Johnson", email: "alice@example.com", phone: "555-1234" },
-  { id: 2, name: "Bob Smith", email: "bob@example.com", phone: "555-5678" },
-  { id: 3, name: "Charlie Brown", email: "charlie@example.com", phone: "555-9012" }
+  { id: 1, name: "Alice Johnson", email: "alice@example.com", purchases: "Lipgloss" },
+  { id: 2, name: "Bob Smith", email: "bob@example.com", purchases: "Keyboard" },
+  { id: 3, name: "Charlie Brown", email: "charlie@example.com", purchases: "Mouse" }
 ];
 
-customers.push({ id: 4, name: "David Wilson", email: "david@example.com", phone: "555-3456" });
+customers.push({ id: 4, name: "David Wilson", email: "david@example.com", purchases: "Headphones" });
 customers.shift();
 
 console.log(customers);
@@ -12,4 +12,11 @@ customers[1].email = "charlie.updated@example.com";
 console.log(customers);
 
 
-customers.purchases.push({ id: 1, customer_id: 1, product: "Laptop", price: 999.99 });
+customers[1].purchases.push = "Monitor";
+console.log(customers);
+
+customers.forEach(customer => {
+  console.log(`Customer Name: ${customer.name}, Email: ${customer.email}, Purchases: ${customer.purchases}`);
+});
+console.log(customers.length);
+
