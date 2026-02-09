@@ -8,4 +8,8 @@ customers.push({ id: 4, name: "David Wilson", email: "david@example.com", phone:
 customers.shift();
 
 console.log(customers);
-customers[1].email = "bob.updated@example.com";
+customers[1].email = "charlie.updated@example.com";
+console.log(customers);
+
+
+customers.purchases.push({ id: 1, customer_id: 1, product: "Laptop", price: 999.99 });
