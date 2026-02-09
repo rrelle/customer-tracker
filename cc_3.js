@@ -5,3 +5,6 @@ const customers = [
 ];
 
 customers.push({ id: 4, name: "David Wilson", email: "david@example.com", phone: "555-3456" });
+customers.shift();
+
+console.log(customers);
