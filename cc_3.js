@@ -8,3 +8,4 @@ customers.push({ id: 4, name: "David Wilson", email: "david@example.com", phone:
 customers.shift();
 
 console.log(customers);
+customers[1].email = "bob.updated@example.com";
